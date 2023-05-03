@@ -1,0 +1,12 @@
+#!/bin/sh
+
+WL_INSTALL_PATH=/home/zunnu/Oracle/Middleware/Oracle_Home/
+WL_DOMAIN_NAME=base_domain
+
+cd /home/zunnu/Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain/bin && 
+nohup ./startNodeManager.sh &
+
+sleep=20
+
+nohup ./startWebLogic.sh &
+
